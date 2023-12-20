@@ -7,6 +7,7 @@ export default function Home() {
       <nav className="flex flex-col gap-y-4 w-full max-w-screen-sm">
         {internalSiteLinks.map(({ pageName, path }) => (
           <Link
+            key={path}
             href={path}
             className="p-4 border border-white rounded text-center 
               transition-all duration-500 
